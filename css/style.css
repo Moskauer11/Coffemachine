@@ -1,5 +1,5 @@
 body{
-        background: url(/img/background-coffee-beans-and-cups.jpg);
+        background: url(img/coffee.jpg);
       }
       
       .coffee-btn{ 
@@ -60,3 +60,13 @@ body{
         width:100%;
         z-index:100;
       }
+      
+      #coffeecup{
+         width:200px; 
+         height:200px;
+         background:lime;
+         left:200px;
+         top:400px;
+         margin:auto;
+      }   
+          
