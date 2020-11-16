@@ -1,7 +1,8 @@
-  let bills = document.querySelectorAll("img[src$='rub.jpg']");
+  <script>
+      let bills = document.querySelectorAll("img[src$='rub.jpg']");
       let progressBar = document.querySelector(".progress-bar");
       let progressCount = 0;
-      
+      coffeecup.hidden = true;
       
       console.log(bills);
       for(let i=0; i<bills.length; i++){
@@ -35,8 +36,6 @@
           }
         }
       }
-    
-    
       function getCoffee(coffeeName, cost){
         if(money.value >= cost){
           money.value = money.value - cost;
@@ -59,6 +58,7 @@
             if (progressCount == 100){
               info.innerHTML = "<i class='fas fa-mug-hot'></i> Кофе "+coffeeName+" готов"; 
               progressBar.hidden = true;
+              coffeecup.hidden = false;
               progressBar.style.width = 0+"%";
               progressCount = 0;
               blocker.style.height = "0vh";
@@ -93,3 +93,5 @@
       function getRandom(min, max){
         return Math.random()*(max-min)+min
       }
+        
+        
